@@ -8,7 +8,7 @@ const BfhlForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const data = inputData.split(',');
-        const response = await fetch('http://localhost:3000/bfhl', {
+        const response = await fetch('https://backend-2-6w2q.onrender.com', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
